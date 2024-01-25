@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+    <script>
+        setTimeout(function(){
+            window.location.href = "/";
+        }, 2000);  // Redirect after 3 seconds (adjust as needed)
+    </script>
+</head>
+<body>
+    <div class="container">
+    <h1>Result</h1>
+    <p>{{ result }}</p>
+</div>
+</body>
+</html>

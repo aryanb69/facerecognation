@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Upload</title>
+</head>
+<body>
+    <h1>Confirm Upload</h1>
+    <img src="{{ uploaded_image_path }}" alt="Uploaded Face">
+    <form action="/confirm_upload" method="post">
+        <input type="hidden" name="uploaded_image_path" value="{{ uploaded_image_path }}">
+        <label for="upload_option">Do you want to upload this image to the Known faces folder?</label>
+        <button type="submit" name="upload_option" value="yes">Yes</button>
+        <button type="submit" name="upload_option" value="no">No</button>
+    </form>
+</body>
+</html>
